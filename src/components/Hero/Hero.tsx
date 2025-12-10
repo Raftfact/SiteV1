@@ -14,9 +14,6 @@ const Hero: React.FC = () => {
           <p className="hero-subtitle">
             Начинающий разработчик.
           </p>
-          <p>
-            
-          </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">
               Посмотреть проекты
