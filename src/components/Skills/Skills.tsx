@@ -9,14 +9,10 @@ interface Skill {
 
 const Skills: React.FC = () => {
   const skills: Skill[] = [
-    { name: 'Node.js', level: 4, category: 'Backend' },
-    { name: 'Python', level: 4, category: 'Backend' },
-    { name: 'TypeScript', level: 3, category: 'Frontend' },
-    { name: 'PostgreSQL', level: 3, category: 'Database' },
-    { name: 'MongoDB', level: 3, category: 'Database' },
-    { name: 'Docker', level: 3, category: 'DevOps' },
-    { name: 'Git', level: 4, category: 'Tools' },
-    { name: 'REST API', level: 4, category: 'Backend' },
+    { name: 'Python', level: 3, category: 'Backend' },
+    { name: 'TypeScript', level: 2, category: 'Frontend' },
+    { name: 'Git', level: 3, category: 'Tools' },
+    { name: 'Java', level: 1, category: 'Backend' },
   ];
 
   return (
