@@ -1,0 +1,87 @@
+// Переменные
+$primary-color: #11167e;
+$secondary-color: #4e1da1;
+$text-color: #110432;
+$light-text: #6b7280;
+$background-light: #f8fafc;
+$white: #ffffff;
+
+// Сброс стилей
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $background-light;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  padding: 80px 20px;
+  
+  &:nth-child(even) {
+    background-color: $white;
+  }
+  
+  &:nth-child(odd) {
+    background-color: $background-light;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Общие стили
+h1, h2, h3, h4 {
+  color: $primary-color;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+// Анимации
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
