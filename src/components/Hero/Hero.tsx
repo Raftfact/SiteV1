@@ -1,6 +1,8 @@
 import React from 'react';
 import './Hero.scss';
 
+import githubIcon from './src/assets/github.png';
+
 const Hero: React.FC = () => {
   return (
     <section className="hero">
@@ -21,20 +23,6 @@ const Hero: React.FC = () => {
             </a>
             <a href="#contact" className="btn btn-secondary">
               Связаться со мной
-            </a>
-          </div>
-          <div className="ico-buttons">
-            <a href="https://github.com/Raftfact" className='ico btn-primary'>
-              <img src='github.png'></img> 
-            </a>
-            <a>
-
-            </a>
-            <a>
-
-            </a>
-            <a>
-              
             </a>
           </div>
         </div>
