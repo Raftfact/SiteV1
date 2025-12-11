@@ -140,7 +140,7 @@ const Projects: React.FC = () => {
             href={`https://github.com/${GITHUB_USERNAME}?tab=repositories`}
             target="_blank" 
             rel="noopener noreferrer"
-            className="btn btn-secondary"
+            className="btn Git-btn-secondary"
           >
             Посмотреть все проекты на GitHub
           </a>
