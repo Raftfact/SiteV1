@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="container">
         <div className="footer-content">
           <p>© {currentYear} Raftfact. Все права защищены.</p>
-          <p className="footer-note">Сделано с ❤️ на React + TypeScript</p>
+          <p className="footer-note">Сделано на React + TypeScript</p>
         </div>
       </div>
     </footer>
