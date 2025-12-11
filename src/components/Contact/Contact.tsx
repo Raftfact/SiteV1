@@ -8,18 +8,15 @@ const Contact: React.FC = () => {
         <h2>Контакты</h2>
         <div className="contact-content">
           <div className="contact-info">
-            <p>Готов к новым вызовам и интересным проектам!</p>
+            <p>Готов к новым интересным проектам!</p>
             <div className="contact-links">
-              <a href="mailto:your.email@example.com" className="contact-link">
-                📧 your.email@example.com
+              <a href="mailto:raftfact@gmail.com" className="contact-link">
+                📧 raftfact@gmail.com
               </a>
-              <a href="https://github.com/yourusername" className="contact-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/raftfact" className="contact-link" target="_blank" rel="noopener noreferrer">
                 💻 GitHub
               </a>
-              <a href="https://linkedin.com/in/yourusername" className="contact-link" target="_blank" rel="noopener noreferrer">
-                🔗 LinkedIn
-              </a>
-              <a href="https://t.me/yourusername" className="contact-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/raftfactcom" className="contact-link" target="_blank" rel="noopener noreferrer">
                 📱 Telegram
               </a>
             </div>
