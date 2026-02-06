@@ -22,7 +22,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: #2563eb;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
@@ -32,8 +32,52 @@
   min-width: 250px;
   justify-content: center;
 
+}
+
+.Mail {
+  background-color: #d85656;
+
   &:hover {
-    background-color: #f0f9ff;
+    background-color: #d62727;
     transform: translateX(5px);
+  }
+
+  .con-mail-icon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+  }
+}
+
+.GitHub {
+  background-color: #272727;
+
+  &:hover {
+  background-color: #000000;
+  transform: translateX(5px);
+  }
+
+  .con-github-icon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  }
+}
+
+.Telegram {
+  background-color: #0088cc;
+
+  &:hover {
+    background-color: #0077b5;
+    transform: translateX(5px);
+  }
+
+  .con-telegram-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
   }
 }

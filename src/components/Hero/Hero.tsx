@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.scss';
-
-import githubIcon from './src/assets/github.png';
+import tgLogo from '../../images/tglogo.png';
+import GitHubLogo from '../../images/githublogo.png'
 
 const Hero: React.FC = () => {
   return (
@@ -14,13 +14,24 @@ const Hero: React.FC = () => {
           <p className="hero-subtitle">
             Начинающий разработчик.
           </p>
-          <div className="hero-buttons">
-            <a href="#projects" className="btn btn-primary">
-              Посмотреть проекты
-            </a>
-            <a href="#contact" className="btn btn-secondary">
-              Связаться со мной
-            </a>
+          <div className="hero-actions">
+            <div className="hero-buttons">
+              <a href="#skills" className="btn btn-primary">
+                Мои навыки
+              </a>
+              <a href="#projects" className="btn btn-secondary">
+                Мои проекты
+              </a>
+            </div>
+            <div className="hero-contacts">
+              <a href='https://t.me/raftfactcom' className='btn btn-telegram'>
+                <img src={tgLogo} alt='Telegram Logo' className='telegram-icon'/>
+              </a>
+              <a href='https://github.com/Raftfact' className='btn btn-github'>
+                <img src={GitHubLogo} alt='GitHub Logo' className='github-icon'/>
+              </a>
+            </div>
+          <div/>
           </div>
         </div>
       </div>

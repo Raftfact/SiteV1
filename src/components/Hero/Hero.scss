@@ -1,19 +1,21 @@
 .hero {
-  min-height: 90vh;
+  min-height: 95vh;
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+
 }
 
 .hero-content {
   max-width: 800px;
   text-align: center;
   margin: 0 auto;
+  
 }
 
 .hero-title {
   font-size: 3.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.2;
 }
 
@@ -24,50 +26,173 @@
 .hero-subtitle {
   font-size: 2rem;
   color: #2a419e;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  
 }
 
-.hero-buttons {
+.hero-actions {
   display: flex;
-  gap: 20px;
-  justify-content: center;
-}
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
 
-.ico-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.btn {
+  .btn {
   padding: 15px 30px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s;
   display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    .btn-primary {
+    background-color: #2a419e;
+    color: white;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #2a419e;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(42, 65, 158, 0.3);
+        border: 2px solid #2a419e;
+      }
+    }
+
+    .btn-secondary {
+      background-color: #ffffff;
+      color: #2a419e;
+      border: 2px solid #2a419e;
+
+      &:hover {
+        background-color: #2a419e;
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(42, 65, 158, 0.3);
+      }
+    }
+  }
+
+  .hero-contacts {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+
+    .btn-telegram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; 
+    height: 60px; 
+    background: #0088cc;
+    border-radius: 50%; 
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    
+      &:hover {
+        background: #0077b5;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 15px rgba(0, 136, 204, 0.4);
+      }
+
+      &:active {
+        transform: translateY(-1px) scale(0.98);
+      }
+    }
+
+    .telegram-icon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    }
+
+    .btn-github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; 
+    height: 60px; 
+    background: #272727;
+    border-radius: 50%; 
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    
+      &:hover {
+        background: #000000;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 15px rgba(71, 71, 71, 0.4);
+      }
+
+      &:active {
+        transform: translateY(-1px) scale(0.98);
+      }
+    }
+
+    .github-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    }
+    
+  }
 }
-
-.btn-primary {
-  background-color: #2a419e;
-  color: white;
-
-  &:hover {
-    background-color: #ffffff;
-    color: #2a419e;
-    transform: translateY(-2px);
-    border: 2px solid #2a419e;
+/* Адаптивность */
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    
+    .btn {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+  
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .btn-telegram {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .telegram-icon {
+    width: 26px;
+    height: 26px;
   }
 }
 
-.btn-secondary {
-  background-color: #ffffff;
-  color: #2a419e;
-  border: 2px solid #2a419e;
-
-  &:hover {
-    background-color: #2a419e;
-    color: white;
-    transform: translateY(-2px);
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.4rem;
+  }
+  
+  .btn {
+    padding: 14px 25px;
+    font-size: 1rem;
   }
 }
