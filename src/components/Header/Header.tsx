@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.scss';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const Header: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const Header: React.FC = () => {
             <li><a href="#skills">Навыки</a></li>
             <li><a href="#projects">Проекты</a></li>
             <li><a href="#contact">Контакты</a></li>
+            <li><ThemeToggle /></li>
           </ul>
         </nav>
       </div>

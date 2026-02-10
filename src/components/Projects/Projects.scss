@@ -1,7 +1,7 @@
 .projects {
   padding: 100px 20px;
-  background-color: #f8fafc;
-  
+  background: var(--background-color);
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -10,12 +10,11 @@
   h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #2a419e;
+    color: var(--secondary-color);
     margin-bottom: 3rem;
   }
 }
 
-// Сообщения
 .error-message, .alert {
   background: #fef3c7;
   border: 1px solid #fbbf24;
@@ -57,7 +56,6 @@
   to { transform: rotate(360deg); }
 }
 
-// Фильтр языков
 .language-filter {
   margin-bottom: 40px;
   text-align: center;
@@ -99,7 +97,6 @@
   }
 }
 
-// Сетка проектов
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -108,7 +105,7 @@
 }
 
 .project-card {
-  background: white;
+  background: var(--project-card);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -128,7 +125,7 @@
   
   h3 {
     margin: 0 0 10px;
-    color: #2a419e;
+    color: var(--secondary-color);
     font-size: 1.4rem;
     line-height: 1.3;
   }
@@ -149,11 +146,20 @@
       color: #fbbf24;
     }
   }
+
+  .stars {
+    color: var(--text-color-sec);
+  }
+
+  .language {
+    color: var(--text-color-sec);
+  }
+
 }
 
 .project-description {
   padding: 15px 25px;
-  color: #4b5563;
+  color: var(--text-color);
   line-height: 1.6;
   flex-grow: 1;
   font-size: 0.95rem;
@@ -164,6 +170,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  
+  .tech-tag {
+    background: var(--skill-category);
+    color: var(--skill-category-text);
+  }
+
 }
 
 .tech-tag {
@@ -186,6 +198,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .updated {
+    color: var(--text-color-sec);
+  }
 }
 
 .project-meta {
@@ -258,7 +274,6 @@
   font-size: 1.2rem;
 }
 
-// Ссылка на профиль GitHub
 .github-profile {
   text-align: center;
   margin-top: 40px;
@@ -274,7 +289,7 @@
   align-items: center;
   gap: 10px;
   padding: 15px 30px;
-  background: #2a419e;
+  background: var(--button-bg-github);  
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -282,9 +297,9 @@
   transition: all 0.3s;
   
   &:hover {
-    background: #1f2937;
+    background-color: #000000;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 15px rgba(71, 71, 71, 0.4);
   }
 }
 

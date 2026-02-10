@@ -1,3 +1,7 @@
+.contact {
+  background: var(--background-color-secondary);
+}
+
 .contact-content {
   max-width: 600px;
   margin: 0 auto;
@@ -6,6 +10,7 @@
 
 .contact-info {
   p {
+    color: var(--text-color);
     font-size: 1.2rem;
     margin-bottom: 2rem;
   }
@@ -40,6 +45,7 @@
   &:hover {
     background-color: #d62727;
     transform: translateX(5px);
+    box-shadow: 0 6px 15px rgba(188, 0, 0, 0.4);
   }
 
   .con-mail-icon {
@@ -51,11 +57,12 @@
 }
 
 .GitHub {
-  background-color: #272727;
+  background: var(--button-bg-github);
 
   &:hover {
   background-color: #000000;
   transform: translateX(5px);
+  box-shadow: 0 6px 15px rgba(71, 71, 71, 0.4);
   }
 
   .con-github-icon {
@@ -72,6 +79,7 @@
   &:hover {
     background-color: #0077b5;
     transform: translateX(5px);
+    box-shadow: 0 6px 15px rgba(0, 136, 204, 0.4);
   }
 
   .con-telegram-icon {

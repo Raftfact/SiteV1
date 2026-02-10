@@ -1,5 +1,6 @@
 import React from 'react';
-import './styles/main.scss';
+import './styles/global.scss';
+import { ThemeProvider } from './context/ThemeContext';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
@@ -10,17 +11,21 @@ import Footer from './components/Footer/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="app">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="app">
+        <Header />
+        <div className="theme-toggle-container">
+        </div>
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 };
 

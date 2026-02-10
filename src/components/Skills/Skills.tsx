@@ -9,7 +9,7 @@ interface Skill {
 
 const Skills: React.FC = () => {
   const skills: Skill[] = [
-    { name: 'Python', level: 3, category: 'Backend' },
+    { name: 'Python', level: 7, category: 'Backend' },
     { name: 'TypeScript', level: 2, category: 'Frontend' },
     { name: 'Git', level: 3, category: 'Tools' },
     { name: 'Java', level: 1, category: 'Backend' },
@@ -29,10 +29,10 @@ const Skills: React.FC = () => {
               <div className="skill-level">
                 <div 
                   className="skill-bar" 
-                  style={{ width: `${skill.level * 20}%` }}
+                  style={{ width: `${skill.level * 10}%` }}
                 ></div>
               </div>
-              <div className="skill-rating">{skill.level}/5</div>
+              <div className="skill-rating">{skill.level}/10</div>
             </div>
           ))}
         </div>

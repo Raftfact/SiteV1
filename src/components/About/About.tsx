@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <section id="about" className="about">
       <div className="container">
-        <h2>Обо мне</h2>
+        <h2 className='about-title'>Обо мне</h2>
         <div className="about-content">
           <div className="about-text">
             <p>

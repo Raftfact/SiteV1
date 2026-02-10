@@ -1,0 +1,140 @@
+:root {
+  --primary-color: #2a419e;
+  --secondary-color: #7c3aed;
+  --background-hero-color: #e5f4ff;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --text-color-sec: #2d0e42;
+  --card-bg: #f0f9ff;
+  --button-bg: #2a419e;
+  --button-text: #ffffff;
+  --border-color: #e0e0e0;
+  --gradient-start: #f0f9ff;
+  --gradient-end: #e0f2fe;
+  --background-color-secondary: #f0f9ff;
+  --background-color-third: #c7c7c7;
+  --logo-text: #2a419e;
+  --button-bg-github: #272727;
+  --skill-card: #ffffff;
+  --skill-category: #e0f2fe;
+  --skill-category-text: #0f74ab;
+  --skill-bar-start: #2563eb;
+  --skill-bar-end: #7c3aed;
+  --project-card: #f0f9ff;
+}
+
+
+.dark-theme {
+  --primary-color: #8b5cf6;
+  --secondary-color: #855efb;
+  --background-hero-color: #1a2436;
+  --background-color: #1a1a2e;
+  --text-color: #e2e8f0;
+  --text-color-sec: #cfaae8;
+  --card-bg: #16213e;
+  --button-bg: #8b5cf6;
+  --button-text: #ffffff;
+  --border-color: #2d3748;
+  --gradient-start: #0f172a;
+  --gradient-end: #1e293b;
+  --background-color-secondary: #161f31;
+  --background-color-third: #111826;
+  --logo-text: #8b5cf6;
+  --button-bg-github: #55369b;
+  --skill-card: #22224b;
+  --skill-category: #253043;
+  --skill-category-text: #8e0fab;
+  --skill-bar-start: #477cee;
+  --skill-bar-end: #915bee;
+  --project-card: #1b1b40;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color); 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$primary-color: #11167e;
+$secondary-color: #4e1da1;
+$text-color: #110432;
+$light-text: #6b7280;
+$background-light: #f8fafc;
+$white: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $background-light;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  padding: 80px 20px;
+  
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
